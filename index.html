@@ -13,11 +13,11 @@
     <div id="app">
         <div class="container"> 
             <div class="slider-wrapper" tabindex="0">
-                <div class="item" v-for="(slide, index) in slides" :key="index" >
-                    <img :src="slides[currentIndex].image" :alt="slide.alt" />
+                <div class="item" >
+                    <img :src="slides[currentIndex].image" :alt="slides[currentIndex].alt"/>
                     <div class="text">
-                        <h3>{{ slide.title }}</h3>
-                        <p>{{ slide.text }}</p>
+                        <h3>{{ slides[currentIndex].title }}</h3>
+                        <p>{{ slides[currentIndex].text }}</p>
                     </div>
                 </div>
                 <div class="thumbs">
@@ -36,5 +36,4 @@
 
 </body>
 </html>
-
 
